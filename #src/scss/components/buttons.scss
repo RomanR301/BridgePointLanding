@@ -48,3 +48,12 @@
     }
   }
 }
+
+.contact-us-btn {
+  border-bottom: 1px solid $darkBlue;
+  color: $darkBlue;
+  @include transition(.3);
+  &:hover {
+    border-color: transparent;
+  }
+}
