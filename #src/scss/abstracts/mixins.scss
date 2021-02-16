@@ -39,6 +39,7 @@
   -ms-flex: 0 0 $size;
   flex: 0 0 $size;
   max-width: $size;
+  padding: 0 15px;
 }
 
 @mixin fontSize($minSize, $maxSize) {

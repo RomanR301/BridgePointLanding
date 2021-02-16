@@ -1,16 +1,216 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.home-search {
-  background: $lightGrey;
-  min-height: calc(100vh - 118px);
-  @media (max-width: $breakpoint-lg) {
-    
+.main-screen {
+  height: 560px;
+  position: relative;
+  & .container {
+    height: 100%;
   }
-  & .search-component {
-    margin-top: 245px;
-    @media (max-width: $breakpoint-lg) {
-      margin-top: 50px;
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    &:before {
+      content: "";
+      background: rgba(0, 85, 123, 0.6);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    & img {
+      @include defaultIcon(cover);
     }
   }
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & h1 {
+      color: $yellowColor;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 60px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 24px;
+    }
+    & p {
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 60px;
+      letter-spacing: 0.5px;
+      color: $whiteColor;
+      font-family: "Montserrat", sans-serif;
+      & span {
+        letter-spacing: 0.5px;
+        color: $whiteColor;
+        font-weight: bold;
+      }
+    }
+  }
+  &__button {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    & a {
+    }
+    & p {
+      margin-left: 25px;
+      font-size: 18px;
+      letter-spacing: unset;
+    }
+  }
+}
+
+.website-navigation {
+  background: $lightGrey;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  & ul {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+  }
+  & li {
+    margin-right: 40px;
+  }
+}
+
+.info-block {
+  padding: 83px 0;
+  &__image {
+    height: 100%;
+    & img {
+      @include defaultIcon(cover);
+    }
+  }
+  &__content {
+    padding: 16px 0 16px 0;
+  }
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    letter-spacing: 0.225px;
+    color: #014f82;
+    margin-bottom: 25px;
+  }
+  &__line {
+    width: 60px;
+    height: 5px;
+    background: $lightBlue;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 24px;
+    color: #555555;
+    font-weight: 500;
+    margin-bottom: 20px;
+    &.small-text {
+      font-size: 18px;
+      & strong {
+        font-weight: 700;
+      }
+    }
+    & p {
+      margin-bottom: 15px;
+    }
+    & strong {
+      font-weight: 600;
+      color: $darkBlue;
+    }
+  }
+  &__link {
+    & a {
+      color: $darkBlue;
+    }
+  }
+}
+
+.benefits {
+  background: $lightGrey;
+  padding: 65px 0;
+  position: relative;
+  margin-bottom: 20px;
+  &__icon {
+    height: 58px;
+    margin-bottom: 24px;
+    & img {
+      @include defaultIcon(contain);
+      object-position: left;
+    }
+  }
+  & h3 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    line-height: 48px;
+    color: #014f82;
+    line-height: 1.7;
+  }
+  & p {
+    margin-bottom: 10px;
+  }
+  & .text-blue {
+    color: $darkBlue;
+  }
+}
+
+.button-row {
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.cta {
+  background: $lightGrey;
+  margin-bottom: 30px;
+  padding: 60px 0;
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__text {
+    width: 80%;
+    margin-right: 30px;
+  }
+  &__icon {
+    width: 55px;
+    margin-bottom: 14px;
+    & img {
+      @include defaultIcon(contain);
+    }
+  }
+  &__title {
+    margin-bottom: 6px;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #014f82;
+  }
+  &__description {
+    & strong {
+      font-weight: 700;
+    }
+  }
+  &__button {
+    margin-left: auto;
+    & a {
+      padding: 12.5px 34px;
+    }
+  }
+}
+
+.faq {
+  background: $lightGrey;
+  padding: 100px 0;
 }
