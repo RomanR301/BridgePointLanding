@@ -274,6 +274,11 @@ input[type=number] {
   position: relative;
   width: 100%;
   height: auto;
+  border-bottom: 3px solid #fff;
+}
+
+.accordion__item:first-child {
+  border-top: 3px solid #fff;
 }
 
 .accordion__item.active .accordion__arrow:before {
@@ -327,7 +332,7 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #ffffff;
+  position: relative;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -1148,6 +1153,14 @@ label[for="file-upload"] {
   display: block;
 }
 
+.menu-item-has-child a.open i:before {
+  display: none;
+}
+
+.menu-item-has-child a.open i:after {
+  display: block;
+}
+
 .hamburger {
   display: none;
   width: 30px;
@@ -1210,14 +1223,30 @@ label[for="file-upload"] {
 }
 
 .icon-arrow {
-  background: url("../../img/arrow-bottom-grey.svg");
-  background-repeat: no-repeat;
-  background-size: 16px;
-  background-position: center;
   margin-left: 15px;
   display: none;
   width: 30px;
   height: 30px;
+}
+
+.icon-arrow:before,
+.icon-arrow:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+}
+
+.icon-arrow:before {
+  background-image: url("../img/arrow-bottom-grey.svg");
+}
+
+.icon-arrow:after {
+  background-image: url("../img/arrow-top-blue.svg");
+  display: none;
 }
 
 .mobile-hamburger {
@@ -1630,7 +1659,7 @@ label[for="file-upload"] {
 }
 
 .faq__heading .icon-faq {
-  background: url("../../img/faq-icon.svg");
+  background: url("../img/faq-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 48px;
@@ -1650,7 +1679,7 @@ label[for="file-upload"] {
 }
 
 .resources__item {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .resources__heading {
@@ -2178,7 +2207,7 @@ label[for="file-upload"] {
   }
 
   .m-row {
-    margin: 0 -15px !important;
+    margin: 0 -14px !important;
   }
 
   .column {
@@ -2246,7 +2275,7 @@ label[for="file-upload"] {
   }
 
   .resources {
-    padding-top: 70px;
+    padding: 70px 0;
   }
 }
 
@@ -2296,7 +2325,8 @@ label[for="file-upload"] {
     transition: all 0.3s ease-out;
     padding: 60px 24px;
     overflow-y: auto;
-    min-height: 100%;
+    height: 100%;
+    flex-direction: column;
   }
 
   .menu {
@@ -2413,6 +2443,10 @@ label[for="file-upload"] {
     width: 100%;
   }
 
+  .cta__icon {
+    width: 44px;
+  }
+
   .cta__button {
     position: absolute;
     left: 0;
@@ -2449,7 +2483,15 @@ label[for="file-upload"] {
 
 @media (max-width: 767px) {
   .accordion__button {
-    padding: 16px 0 12px 0;
+    padding: 16px 40px 12px 0;
+    font-size: 18px;
+  }
+
+  .accordion__button i {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    transform: translate(0, -50%);
   }
 
   .filters-toggler label:first-child {
@@ -2542,6 +2584,7 @@ label[for="file-upload"] {
 
   .footer-awards-row .awards__description {
     margin: 1px 0 0 0;
+    font-size: 18px;
   }
 
   .footer-awards-row .awards__google {
@@ -2550,6 +2593,15 @@ label[for="file-upload"] {
 
   .footer-contact-row {
     width: 90%;
+  }
+
+  .footer-copyright-row a {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .footer-copyright-row a:before {
+    display: none;
   }
 
   .main-screen {
@@ -2585,7 +2637,7 @@ label[for="file-upload"] {
   }
 
   .info-block {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
 
   .info-block .row.right-side-image {
@@ -2598,6 +2650,10 @@ label[for="file-upload"] {
 
   .info-block__image {
     margin: 40px -15px 0 -15px;
+  }
+
+  .cta {
+    padding: 45px 0;
   }
 
   .faq {

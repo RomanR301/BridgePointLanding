@@ -166,7 +166,7 @@
     padding: 60px 0;
   }
   @media (max-width: $breakpoint-md) {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
   & .row {
     &.right-side-image {
@@ -307,6 +307,9 @@
   margin-bottom: 30px;
   padding: 60px 0;
   position: relative;
+  @media (max-width: $breakpoint-md) {
+    padding: 45px 0;
+  }
   &__inner {
     display: flex;
     align-items: flex-end;
@@ -321,6 +324,9 @@
   &__icon {
     width: 55px;
     margin-bottom: 14px;
+    @media (max-width: $breakpoint-lg) {
+      width: 44px;
+    }
     & img {
       @include defaultIcon(contain);
     }
@@ -383,7 +389,7 @@
       margin: 0 -15px 25px -15px;
     }
     & .icon-faq {
-      background: url('../../img/faq-icon.svg');
+      background: url('../img/faq-icon.svg');
       background-repeat: no-repeat;
       background-size: contain;
       width: 48px;
@@ -412,13 +418,13 @@
 .resources {
   padding: 100px 0 85px 0;
   @media (max-width: $breakpoint-xl) {
-    padding-top: 70px;
+    padding: 70px 0;
   }
   @media (max-width: $breakpoint-lg) {
     padding-top: 60px;
   }
   &__item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   &__heading {
     font-family: "Montserrat", sans-serif;

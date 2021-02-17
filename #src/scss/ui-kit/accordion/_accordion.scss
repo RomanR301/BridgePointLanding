@@ -9,6 +9,10 @@
     position: relative;
     width: 100%;
     height: auto;
+    border-bottom: 3px solid #fff;
+    &:first-child {
+      border-top: 3px solid #fff;
+    }
     &.active {
       & .accordion__arrow {
         &:before {
@@ -57,17 +61,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid $whiteColor;;
+    position: relative;
     @include transition(.3);
     @media (max-width: $breakpoint-lg) {
       padding: 16px 0 12px 0;
     }
     @media (max-width: $breakpoint-md) {
-      padding: 16px 0 12px 0;
+      padding: 16px 40px 12px 0;
+      font-size: 18px;
     }
     & i {
       width: 20px;
       height: 10px;
+      @media (max-width: $breakpoint-md) {
+        position: absolute;
+        top: 55%;
+        right: 0;
+        transform: translate(0, -50%);
+      }
       &:before, &:after {
         content: '';
         position: absolute;
