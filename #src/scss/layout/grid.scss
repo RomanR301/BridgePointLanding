@@ -9,6 +9,15 @@
   max-width: 1140px;
   margin: auto;
   padding: 0 15px;
+  @media (max-width: $breakpoint-xl) {
+    padding: 0 30px;
+  }
+  @media (max-width: $breakpoint-lg) {
+    padding: 0 24px;
+  }
+  @media (max-width: $breakpoint-md) {
+    padding: 0 14px;
+  }
 }
 
 .container-fluid {
@@ -27,9 +36,7 @@
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   margin: 0 15px;
-  @media (max-width: $breakpoint-md) {
-    margin: 0;
-  }
+
 } 
 
 .d-flex {
@@ -48,14 +55,8 @@
 
 .m-row {
   margin: 0 -30px;
-  @media (max-width: $breakpoint-sm) {
-    margin: 0 !important;
-  }
-}
-
-.m-0-mob {
-  @media (max-width: $breakpoint-md) {
-    margin: 0;
+  @media (max-width: $breakpoint-xl) {
+    margin: 0 -15px!important;
   }
 }
 
@@ -64,38 +65,19 @@
     display: none;
   }
 }
+.hidden-lg {
+  @media (min-width: $breakpoint-lg) {
+    display: none;
+  }
+}
 
 .m-0 {
   margin: 0;
 }
-
-.p-0 {
-  padding: 0 15px;
-  @media (max-width: $breakpoint-md) {
-    padding: 0;
-  }
-}
-
-.p-zero {
-  padding: 0 !important;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.mt-20 {
-  margin-top: 20px;
-}
-
-.mb-24 {
-  margin-bottom: 24px;
-}
-
 .column {
   padding: 0 30px!important;
-  @media (max-width: $breakpoint-md) {
-    padding: 0;
+  @media (max-width: $breakpoint-xl) {
+    padding: 0 15px!important;
   }
 }
 

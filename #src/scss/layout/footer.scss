@@ -7,6 +7,9 @@
     border-top: 1px solid #D1D1D1;
     padding: 50px 0;
     margin: 0;
+    @media (max-width: $breakpoint-lg) {
+      display: none;
+    }
   }
   &-column {
     display: flex;
@@ -36,9 +39,25 @@
     display: flex;
     align-items: center;
     padding-bottom: 40px;
+    @media (max-width: $breakpoint-lg) {
+      padding-top: 40px;
+      border-top: 1px solid #D1D1D1;
+      flex-wrap: wrap;
+    }
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 30px;
+    }
     & .awards {
       &__image {
         width: 400px;
+        @media (max-width: $breakpoint-md) {
+          width: 320px;
+        }
+        @media (max-width: 360px) {
+          width: 100%;
+        }
         & img {
           @include defaultIcon(contain);
         }
@@ -46,11 +65,25 @@
       &__description {
         margin-right: auto;
         color: $darkBlue;
-        font-size: 18px;
         line-height: 24px;
+        @media (max-width: $breakpoint-lg) {
+          font-size: 21px;
+          margin: 0 0 0 auto;
+          text-align: center;
+        }
+        @media (max-width: $breakpoint-md) {
+          margin: 1px 0 0 0;
+        }
       }
       &__google {
         width: 200px;
+        @media (max-width: $breakpoint-lg) {
+          width: 230px;
+          margin: 23px auto 0 auto;
+        }
+        @media (max-width: $breakpoint-md) {
+          margin: 24px 0 0 0;
+        }
         & img {
           @include defaultIcon(contain);
         }
@@ -59,8 +92,16 @@
   }
   &-contact-row {
     padding-bottom: 25px;
-    border-bottom: 1px solid #D1D1D1;
     color: #6D7278;
+    font-size: 16px;
+    @media (max-width: $breakpoint-lg) {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto;
+    }
+    @media (max-width: $breakpoint-md) {
+      width: 90%;
+    }
     & a {
       color: $lightBlue;
       @include transition(.3);
@@ -70,8 +111,13 @@
     }
   }
   &-copyright-row {
+    border-top: 1px solid #D1D1D1;
     padding: 30px 0 40px 0;
     color: #6D7278;
+    font-size: 14px;
+    @media (max-width: $breakpoint-lg) {
+      text-align: center;
+    }
     & a {
       &:before {
         content: '|';
