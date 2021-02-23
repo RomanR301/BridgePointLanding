@@ -1,5 +1,3 @@
-@import url("https://use.typekit.net/mzs5xmm.css");
-
 @font-face {
   font-family: "Montserrat";
   font-display: swap;
@@ -17,25 +15,25 @@
 }
 
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "Roboto";
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -143,7 +141,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "acumin-pro";
+  font-family: "Roboto", sans-serif;
   color: #555555;
   font-weight: 400;
   vertical-align: baseline;
@@ -154,115 +152,10 @@ body {
   position: relative;
   background: #ffffff;
   color: #555555;
-  font-family: "acumin-pro";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.7;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-family: "acumin-pro";
-  color: #555555;
-  font-weight: 400;
-  vertical-align: baseline;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
-body {
-  position: relative;
-  background: #ffffff;
-  color: #555555;
-  font-family: "acumin-pro";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-.helvetica * {
-  font-family: "HelveticaNeueCyr", sans-serif;
 }
 
 .no-focus-outline a:focus,
@@ -1194,7 +1087,7 @@ label[for="file-upload"] {
 }
 
 .sub-menu-container a {
-  font-family: 'acumin-pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
@@ -1239,7 +1132,7 @@ label[for="file-upload"] {
 }
 
 .sub-menu a {
-  font-family: 'acumin-pro';
+  font-family: 'Roboto';
   line-height: 30px;
   font-size: 16px;
   display: inline-block;
@@ -1570,7 +1463,7 @@ label[for="file-upload"] {
   margin-left: 25px;
   font-size: 18px;
   letter-spacing: unset;
-  font-family: 'acumin-pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .website-navigation {
@@ -2284,10 +2177,6 @@ label[for="file-upload"] {
 }
 
 @media (max-width: 1200px) {
-  body {
-    font-size: 16px;
-  }
-
   body {
     font-size: 16px;
   }

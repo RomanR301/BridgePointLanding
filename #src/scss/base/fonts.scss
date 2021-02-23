@@ -1,9 +1,9 @@
-@import url("https://use.typekit.net/mzs5xmm.css");
+// @import url("https://use.typekit.net/mzs5xmm.css");
 
 @include font("Montserrat", "Montserrat-Bold", "700", "normal");
 @include font("Montserrat", "Montserrat-Regular", "400", "normal");
 
-@include font("HelveticaNeueCyr", "HelveticaNeueCyr-Bold", "700", "normal");
-@include font("HelveticaNeueCyr", "HelveticaNeueCyr-Medium", "500", "normal");
-@include font("HelveticaNeueCyr", "HelveticaNeueCyr-Roman", "400", "normal");
+@include font("Roboto", "Roboto-Bold", "700", "normal");
+@include font("Roboto", "Roboto-Medium", "500", "normal");
+@include font("Roboto", "Roboto-Regular", "400", "normal");
 
