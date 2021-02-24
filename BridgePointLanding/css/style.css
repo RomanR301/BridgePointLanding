@@ -415,7 +415,7 @@ input[type=number] {
 }
 
 .btn-primary:hover {
-  background: transparent;
+  background: #ffffff;
   color: #009ADE;
 }
 
