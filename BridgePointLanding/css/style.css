@@ -155,7 +155,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 .no-focus-outline a:focus,
@@ -346,7 +346,7 @@ input[type=number] {
 
 .accordion__button {
   display: block;
-  padding: 16px 20px 12px 20px;
+  padding: 20px 20px 14px 20px;
   text-decoration: none;
   color: #555555;
   font-size: 21px;
@@ -393,7 +393,8 @@ input[type=number] {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
-  padding: 12.5px 25px;
+  line-height: 1;
+  padding: 13.5px 25px 12.5px 25px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -1016,12 +1017,14 @@ label[for="file-upload"] {
   line-height: 15px;
   letter-spacing: 1px;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header-phone a {
   color: #014F82;
   letter-spacing: 1px;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header-login {
@@ -1290,6 +1293,10 @@ label[for="file-upload"] {
   align-items: flex-start;
 }
 
+.footer-column.blog-column {
+  margin-right: 60px;
+}
+
 .footer-column a {
   font-size: 14px;
   display: inline-block;
@@ -1445,6 +1452,7 @@ label[for="file-upload"] {
   letter-spacing: 0.5px;
   color: #ffffff;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   background-image: linear-gradient(#ffffff, #ffffff);
   background-position: 0% 88%;
@@ -1462,6 +1470,7 @@ label[for="file-upload"] {
 .main-screen__button p {
   margin-left: 25px;
   font-size: 18px;
+  font-weight: 400;
   letter-spacing: unset;
   font-family: 'Roboto', sans-serif;
 }
@@ -1542,7 +1551,7 @@ label[for="file-upload"] {
 .info-block__text {
   font-size: 24px;
   color: #555555;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -1655,6 +1664,7 @@ label[for="file-upload"] {
 
 .cta__button {
   margin-left: auto;
+  margin-bottom: 3px;
 }
 
 .cta__button a {
@@ -1693,7 +1703,12 @@ label[for="file-upload"] {
 .faq__addition {
   padding: 14px 20px;
   font-size: 21px;
-  margin: 0 -20px;
+  margin: 20px -20px 0 -20px;
+  font-weight: 500;
+}
+
+.faq__addition a {
+  font-weight: 500;
 }
 
 .resources {

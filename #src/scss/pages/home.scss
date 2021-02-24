@@ -72,6 +72,7 @@
         letter-spacing: 0.5px;
         color: $whiteColor;
         font-weight: bold;
+        font-family: "Montserrat", sans-serif;
         text-decoration: none;
         background-image: linear-gradient($whiteColor, $whiteColor);
         background-position: 0% 88%;
@@ -113,6 +114,7 @@
     & p {
       margin-left: 25px;
       font-size: 18px;
+      font-weight: 400;
       letter-spacing: unset;
       font-family: 'Roboto', sans-serif;
       @media (max-width: $breakpoint-xl) {
@@ -215,7 +217,7 @@
   &__text {
     font-size: 24px;
     color: #555555;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 20px;
     @media (max-width: $breakpoint-xl) {
       font-size: 20px;
@@ -347,6 +349,7 @@
   }
   &__button {
     margin-left: auto;
+    margin-bottom: 3px;
     @media (max-width: $breakpoint-lg) {
       position: absolute;
       left: 0;
@@ -407,7 +410,11 @@
   &__addition {
     padding: 14px 20px;
     font-size: 21px;
-    margin: 0 -20px;
+    margin: 20px -20px 0 -20px;
+    font-weight: 500;
+    & a {
+      font-weight: 500;
+    }
     @media (max-width: $breakpoint-lg) {
       margin: 0 -15px;
       padding: 14px 0;
