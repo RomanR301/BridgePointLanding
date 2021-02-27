@@ -48,8 +48,9 @@
       font-size: 38px;
       line-height: 1.8;
       letter-spacing: 1.5px;
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
+      // text-transform: uppercase;
+      // font-family: "Montserrat", sans-serif;
+      font-family: 'HelveticaNowDisplay-XBd', sans-serif;
       margin-bottom: 24px;
       @media (max-width: $breakpoint-xl) {
         font-size: 32px;
@@ -58,24 +59,27 @@
         font-size: 28px;
       }
       @media (max-width: $breakpoint-md) {
-        font-size: 16px;
+        font-size: 21px;
+        margin-bottom: 12px;
       }
     }
     & p {
       font-weight: 700;
       font-size: 46px;
-      line-height: 1.3;
+      line-height: 1.5;
       letter-spacing: 0.5px;
       color: $whiteColor;
-      font-family: "Montserrat", sans-serif;
+      // font-family: "Montserrat", sans-serif;
+      font-family: 'HelveticaNowDisplay-XBd', sans-serif;
       & span {
         letter-spacing: 0.5px;
         color: $whiteColor;
         font-weight: bold;
-        font-family: "Montserrat", sans-serif;
+        // font-family: "Montserrat", sans-serif;
+        font-family: 'HelveticaNowDisplay-XBd', sans-serif;
         text-decoration: none;
         background-image: linear-gradient($whiteColor, $whiteColor);
-        background-position: 0% 88%;
+        background-position: 0% 92%;
         background-repeat: no-repeat;
         background-size: 100% 3px;
         transition: background-size .3s;
@@ -116,7 +120,7 @@
       font-size: 18px;
       font-weight: 400;
       letter-spacing: unset;
-      font-family: 'Roboto', sans-serif;
+      font-family: inherit;
       @media (max-width: $breakpoint-xl) {
         font-size: 18px;
       }
@@ -126,8 +130,13 @@
       @media (max-width: $breakpoint-md) {
         font-size: 14px;
         margin: 16px 0 0 0;
-        max-width: 65%;
+        max-width: 80%;
         font-weight: 400;
+      }
+      & a {
+        color: $whiteColor;
+        // font-family: 'HelveticaNowText-Bold', sans-serif;
+        border-color: $whiteColor;
       }
     }
   }
@@ -194,7 +203,7 @@
     padding: 16px 0 16px 0;
   }
   &__title {
-    font-family: "Montserrat", sans-serif;
+    font-family: "HelveticaNowDisplay-XBd", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.3;
@@ -215,8 +224,7 @@
     margin-bottom: 20px;
   }
   &__text {
-    font-size: 24px;
-    color: #555555;
+    font-size: 21px;
     font-weight: 400;
     margin-bottom: 20px;
     @media (max-width: $breakpoint-xl) {
@@ -238,6 +246,7 @@
       margin-bottom: 15px;
     }
     & strong {
+      font-family: 'HelveticaNowText-Bold', sans-serif;
       font-weight: 600;
       color: $darkBlue;
     }
@@ -279,8 +288,8 @@
   }
   & h3 {
     margin-bottom: 8px;
+    font-family: "HelveticaNowDisplay-XBd", sans-serif;
     font-size: 28px;
-    line-height: 48px;
     color: #014f82;
     line-height: 1.7;
     @media (max-width: $breakpoint-xl) {
@@ -309,16 +318,17 @@
   margin-bottom: 30px;
   padding: 60px 0;
   position: relative;
-  @media (max-width: $breakpoint-md) {
+  @media (max-width: $breakpoint-lg) {
     padding: 45px 0;
   }
   &__inner {
-    display: flex;
-    align-items: flex-end;
+    // display: flex;
+    // align-items: flex-end;
   }
   &__text {
-    width: 80%;
-    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    // margin-right: 30px;
     @media (max-width: $breakpoint-lg) {
       width: 100%;
     }
@@ -335,6 +345,7 @@
   }
   &__title {
     margin-bottom: 6px;
+    font-family: "HelveticaNowDisplay-XBd", sans-serif;
     font-size: 30px;
     line-height: 1.6;
     color: #014f82;
@@ -343,13 +354,16 @@
     }
   }
   &__description {
+    width: 85%;
     & strong {
       font-weight: 700;
+      font-family: "HelveticaNowText-Bold";
+      color: #014f82;
     }
   }
   &__button {
-    margin-left: auto;
-    margin-bottom: 3px;
+    // margin-left: auto;
+    margin-top: 6px;
     @media (max-width: $breakpoint-lg) {
       position: absolute;
       left: 0;
@@ -359,8 +373,17 @@
       justify-content: center;
     }
     & a {
-      min-width: 179px;
-      padding: 12.5px 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 160px;
+      width: 160px;
+      padding: 12px 10px;
+      @media (max-width: $breakpoint-lg) {
+        width: 140px;
+        min-width: 140px;
+        padding: 9px 12px;
+      }
     }
   }
 }
@@ -372,7 +395,8 @@
     padding: 50px 0;
   }
   &__heading {
-    font-family: "Montserrat", sans-serif;
+    // font-family: "Montserrat", sans-serif;
+    font-family: "HelveticaNowDisplay-XBd", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.3;
@@ -408,16 +432,19 @@
     }
   }
   &__addition {
+    font-family: "HelveticaNowText-Bold", sans-serif;
     padding: 14px 20px;
     font-size: 21px;
-    margin: 20px -20px 0 -20px;
-    font-weight: 500;
+    margin: 30px -20px 0 -20px;
+    font-weight: 700;
     & a {
-      font-weight: 500;
+      font-weight: 700;
     }
     @media (max-width: $breakpoint-lg) {
       margin: 0 -15px;
       padding: 14px 0;
+      font-size: 18px;
+      margin-top: 10px;
     }
   }
 }
@@ -432,9 +459,16 @@
   }
   &__item {
     margin-bottom: 40px;
+    & .btn {
+      padding: 12px 20px;
+      @media (max-width: $breakpoint-md) {
+        padding: 9px 16px;
+      }
+    }
   }
   &__heading {
-    font-family: "Montserrat", sans-serif;
+    // font-family: "Montserrat", sans-serif;
+    font-family: "HelveticaNowDisplay-XBd", sans-serif;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -444,6 +478,7 @@
   }
   &__title {
     margin-bottom: 20px;
+    font-family: "HelveticaNowDisplay-XBd", sans-serif;
     font-size: 24px;
     color: $darkBlue;
     @media (max-width: $breakpoint-lg) {

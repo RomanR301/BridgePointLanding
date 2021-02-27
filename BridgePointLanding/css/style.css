@@ -14,30 +14,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-display: swap;
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
 .--relative {
   position: relative;
 }
@@ -141,8 +117,8 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "Roboto", sans-serif;
-  color: #555555;
+  font-family: "HelveticaNowText-Regular", sans-serif;
+  color: #333333;
   font-weight: 400;
   vertical-align: baseline;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -151,11 +127,11 @@ video {
 body {
   position: relative;
   background: #ffffff;
-  color: #555555;
-  font-family: "Roboto", sans-serif;
+  color: #333333;
+  font-family: "HelveticaNowText-Regular", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .no-focus-outline a:focus,
@@ -319,12 +295,12 @@ input[type=number] {
 
 .accordion__content {
   display: none;
-  padding: 0 20px 30px 20px;
+  padding: 0 20px 25px 20px;
 }
 
 .accordion__content p {
   margin: 0 0 15px 0;
-  color: #555555;
+  color: #333333;
 }
 
 .accordion__content p:last-child {
@@ -346,15 +322,17 @@ input[type=number] {
 
 .accordion__button {
   display: block;
-  padding: 20px 20px 14px 20px;
   text-decoration: none;
-  color: #555555;
+  color: #333333;
   font-size: 21px;
   line-height: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 12px 20px 11px 20px;
+  font-size: 21px;
+  line-height: 1.5;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -390,7 +368,7 @@ input[type=number] {
 }
 
 .btn {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
   letter-spacing: 1px;
   line-height: 1;
@@ -401,7 +379,6 @@ input[type=number] {
   transition: all 0.3s ease-out;
   border: 2px solid transparent;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   border-radius: 23px;
   cursor: pointer;
@@ -411,7 +388,7 @@ input[type=number] {
   background: #009ADE;
   border-color: #009ADE;
   color: #ffffff;
-  padding: 12.5px 44px;
+  padding: 11px 36px 13px 36px;
 }
 
 .btn-primary:hover {
@@ -451,6 +428,10 @@ input[type=number] {
 }
 
 .contact-us-btn {
+  font-family: 'HelveticaNowText-Bold', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1.1;
   border-bottom: 1px solid #014F82;
   color: #014F82;
   -webkit-transition: all 0.3s ease-out;
@@ -475,7 +456,7 @@ input[type=number] {
   border: none;
   font-size: inherit;
   font-family: inherit;
-  color: #555555;
+  color: #333333;
   border-radius: 0;
 }
 
@@ -494,7 +475,7 @@ input[type=number] {
   border: none;
   font-size: inherit;
   font-family: inherit;
-  color: #555555;
+  color: #333333;
   background: #ffffff;
 }
 
@@ -1321,6 +1302,7 @@ label[for="file-upload"] {
   margin-bottom: 14px;
   line-height: 1.1;
   display: inline-block;
+  font-family: "HelveticaNowText-Bold", sans-serif;
 }
 
 .footer-awards-row {
@@ -1342,6 +1324,7 @@ label[for="file-upload"] {
 }
 
 .footer-awards-row .awards__description {
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   margin-right: auto;
   color: #014F82;
   line-height: 24px;
@@ -1360,7 +1343,6 @@ label[for="file-upload"] {
 
 .footer-contact-row {
   padding-bottom: 25px;
-  color: #6D7278;
   font-size: 16px;
 }
 
@@ -1379,7 +1361,6 @@ label[for="file-upload"] {
 .footer-copyright-row {
   border-top: 1px solid #D1D1D1;
   padding: 30px 0 40px 0;
-  color: #6D7278;
   font-size: 14px;
 }
 
@@ -1436,28 +1417,27 @@ label[for="file-upload"] {
   font-size: 38px;
   line-height: 1.8;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'HelveticaNowDisplay-XBd', sans-serif;
   margin-bottom: 24px;
 }
 
 .main-screen__content p {
   font-weight: 700;
   font-size: 46px;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 0.5px;
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'HelveticaNowDisplay-XBd', sans-serif;
 }
 
 .main-screen__content p span {
   letter-spacing: 0.5px;
   color: #ffffff;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'HelveticaNowDisplay-XBd', sans-serif;
   text-decoration: none;
   background-image: linear-gradient(#ffffff, #ffffff);
-  background-position: 0% 88%;
+  background-position: 0% 92%;
   background-repeat: no-repeat;
   background-size: 100% 3px;
   transition: background-size .3s;
@@ -1474,7 +1454,12 @@ label[for="file-upload"] {
   font-size: 18px;
   font-weight: 400;
   letter-spacing: unset;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
+}
+
+.main-screen__button p a {
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .website-navigation {
@@ -1534,7 +1519,7 @@ label[for="file-upload"] {
 }
 
 .info-block__title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.3;
@@ -1551,8 +1536,7 @@ label[for="file-upload"] {
 }
 
 .info-block__text {
-  font-size: 24px;
-  color: #555555;
+  font-size: 21px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -1570,6 +1554,7 @@ label[for="file-upload"] {
 }
 
 .info-block__text strong {
+  font-family: 'HelveticaNowText-Bold', sans-serif;
   font-weight: 600;
   color: #014F82;
 }
@@ -1601,8 +1586,8 @@ label[for="file-upload"] {
 
 .benefits h3 {
   margin-bottom: 8px;
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   font-size: 28px;
-  line-height: 48px;
   color: #014f82;
   line-height: 1.7;
 }
@@ -1631,14 +1616,9 @@ label[for="file-upload"] {
   position: relative;
 }
 
-.cta__inner {
-  display: flex;
-  align-items: flex-end;
-}
-
 .cta__text {
-  width: 80%;
-  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cta__icon {
@@ -1655,23 +1635,33 @@ label[for="file-upload"] {
 
 .cta__title {
   margin-bottom: 6px;
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   font-size: 30px;
   line-height: 1.6;
   color: #014f82;
 }
 
+.cta__description {
+  width: 85%;
+}
+
 .cta__description strong {
   font-weight: 700;
+  font-family: "HelveticaNowText-Bold";
+  color: #014f82;
 }
 
 .cta__button {
-  margin-left: auto;
-  margin-bottom: 3px;
+  margin-top: 6px;
 }
 
 .cta__button a {
-  min-width: 179px;
-  padding: 12.5px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  width: 160px;
+  padding: 12px 10px;
 }
 
 .faq {
@@ -1680,7 +1670,7 @@ label[for="file-upload"] {
 }
 
 .faq__heading {
-  font-family: "Montserrat", sans-serif;
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.3;
@@ -1703,14 +1693,15 @@ label[for="file-upload"] {
 }
 
 .faq__addition {
+  font-family: "HelveticaNowText-Bold", sans-serif;
   padding: 14px 20px;
   font-size: 21px;
-  margin: 20px -20px 0 -20px;
-  font-weight: 500;
+  margin: 30px -20px 0 -20px;
+  font-weight: 700;
 }
 
 .faq__addition a {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .resources {
@@ -1721,8 +1712,12 @@ label[for="file-upload"] {
   margin-bottom: 40px;
 }
 
+.resources__item .btn {
+  padding: 12px 20px;
+}
+
 .resources__heading {
-  font-family: "Montserrat", sans-serif;
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -1733,6 +1728,7 @@ label[for="file-upload"] {
 
 .resources__title {
   margin-bottom: 20px;
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   font-size: 24px;
   color: #014F82;
 }
@@ -2337,6 +2333,11 @@ label[for="file-upload"] {
     padding: 16px 0 12px 0;
   }
 
+  .btn {
+    padding: 9px 20px 9px 20px;
+    font-size: 16px;
+  }
+
   .line {
     margin: 20px 0;
   }
@@ -2485,6 +2486,10 @@ label[for="file-upload"] {
     margin-bottom: 20px;
   }
 
+  .cta {
+    padding: 45px 0;
+  }
+
   .cta__text {
     width: 100%;
   }
@@ -2502,6 +2507,12 @@ label[for="file-upload"] {
     justify-content: center;
   }
 
+  .cta__button a {
+    width: 140px;
+    min-width: 140px;
+    padding: 9px 12px;
+  }
+
   .faq__heading {
     font-size: 24px;
     flex-direction: column-reverse;
@@ -2516,6 +2527,8 @@ label[for="file-upload"] {
   .faq__addition {
     margin: 0 -15px;
     padding: 14px 0;
+    font-size: 18px;
+    margin-top: 10px;
   }
 
   .resources {
@@ -2655,7 +2668,8 @@ label[for="file-upload"] {
   }
 
   .main-screen__content h1 {
-    font-size: 16px;
+    font-size: 21px;
+    margin-bottom: 12px;
   }
 
   .main-screen__content p {
@@ -2674,7 +2688,7 @@ label[for="file-upload"] {
   .main-screen__button p {
     font-size: 14px;
     margin: 16px 0 0 0;
-    max-width: 65%;
+    max-width: 80%;
     font-weight: 400;
   }
 
@@ -2698,12 +2712,12 @@ label[for="file-upload"] {
     margin: 40px -15px 0 -15px;
   }
 
-  .cta {
-    padding: 45px 0;
-  }
-
   .faq {
     padding: 50px 0;
+  }
+
+  .resources__item .btn {
+    padding: 9px 16px;
   }
 }
 

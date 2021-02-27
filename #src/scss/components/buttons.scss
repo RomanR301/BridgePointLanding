@@ -2,7 +2,7 @@
 @import "../abstracts/variables";
 
 .btn {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
   letter-spacing: 1px;
   line-height: 1;
@@ -10,15 +10,20 @@
   @include transition(.3);
   border: 2px solid transparent;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   border-radius: 23px;
   cursor: pointer;  
+  @media (max-width: $breakpoint-lg) {
+    padding: 9px 20px 9px 20px;
+    font-size: 16px;
+  }
   &-primary {
     background: $lightBlue;
     border-color: $lightBlue;
     color: $whiteColor;
-    padding: 12.5px 44px;
+    padding: 11px 36px 13px 36px;
+    // padding: 12.5px 44px;
     &:hover {
       background: $whiteColor;
       color: $lightBlue;
@@ -51,6 +56,10 @@
 }
 
 .contact-us-btn {
+  font-family: 'HelveticaNowText-Bold', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1.1;
   border-bottom: 1px solid $darkBlue;
   color: $darkBlue;
   @include transition(.3);
