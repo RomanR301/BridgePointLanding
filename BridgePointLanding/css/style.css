@@ -2360,6 +2360,7 @@ label[for="file-upload"] {
   .btn {
     min-width: 146px;
     min-height: 40px;
+    font-size: 16px;
   }
 
   .line {
