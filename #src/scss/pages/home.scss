@@ -512,13 +512,15 @@
   }
   &__heading {
     font-weight: 900;
-    font-size: 21px;
+    font-size: 24px;
+    line-height: 28px;
     margin-bottom: 23px;
     color: $lightBlue;
   }
   &__title {
     margin-bottom: 20px;
     font-weight: 900;
+    line-height: 36px;
     font-size: 24px;
     color: $darkBlue;
     @media (max-width: $breakpoint-lg) {
