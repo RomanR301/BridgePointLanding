@@ -12,7 +12,7 @@
     padding: 100px 0;
   }
   @media (max-width: $breakpoint-md) {
-    padding: 60px 0 50px 0;
+    padding: 50px 0 30px 0;
   }
   & .container {
     height: 100%;
@@ -44,39 +44,45 @@
     justify-content: center;
     & h1 {
       color: $yellowColor;
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 1.8;
-      letter-spacing: 1.5px;
-      // text-transform: uppercase;
-      // font-family: "Montserrat", sans-serif;
-      font-family: 'HelveticaNowDisplay-XBd', sans-serif;
+      font-size: 40px;
+      line-height: 60px;
+      font-weight: 900;
       margin-bottom: 24px;
       @media (max-width: $breakpoint-xl) {
-        font-size: 32px;
+        font-size: 34px;
+        line-height: 51px;
       }
       @media (max-width: $breakpoint-lg) {
-        font-size: 28px;
+        font-size: 30px;
+        line-height: 45px;
       }
       @media (max-width: $breakpoint-md) {
         font-size: 21px;
-        margin-bottom: 12px;
+        line-height: 30px;
       }
     }
     & p {
-      font-weight: 700;
-      font-size: 46px;
-      line-height: 1.5;
-      letter-spacing: 0.5px;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 64px;
       color: $whiteColor;
-      // font-family: "Montserrat", sans-serif;
-      font-family: 'HelveticaNowDisplay-XBd', sans-serif;
+      @media (max-width: $breakpoint-xl) {
+        font-size: 40px;
+        line-height: 53px;
+      }
+      @media (max-width: $breakpoint-lg) {
+        font-size: 30px;
+        line-height: 42px;
+      }
+      @media (max-width: $breakpoint-md) {
+        font-size: 28px;
+        line-height: 38px;
+      }
       & span {
-        letter-spacing: 0.5px;
+        font-size: 48px;
+        line-height: 64px;
         color: $whiteColor;
-        font-weight: bold;
-        // font-family: "Montserrat", sans-serif;
-        font-family: 'HelveticaNowDisplay-XBd', sans-serif;
+        font-weight: 900;
         text-decoration: none;
         background-image: linear-gradient($whiteColor, $whiteColor);
         background-position: 0% 92%;
@@ -85,24 +91,16 @@
         transition: background-size .3s;
         @media (max-width: $breakpoint-xl) {
           background-size: 100% 2px;
+          font-size: 40px;
+          line-height: 53px;
         }
-      }
-      @media (max-width: $breakpoint-xl) {
-        font-size: 36px;
-        & span {
-          font-size: 36px;
-        }
-      }
-      @media (max-width: $breakpoint-lg) {
-        font-size: 30px;
-        & span {
+        @media (max-width: $breakpoint-lg) {
           font-size: 30px;
+          line-height: 42px;
         }
-      }
-      @media (max-width: $breakpoint-md) {
-        font-size: 26px;
-        & span {
-          font-size: 26px;
+        @media (max-width: $breakpoint-md) {
+          font-size: 28px;
+          line-height: 38px;
         }
       }
     }
@@ -119,23 +117,24 @@
       margin-left: 25px;
       font-size: 18px;
       font-weight: 400;
-      letter-spacing: unset;
       font-family: inherit;
       @media (max-width: $breakpoint-xl) {
         font-size: 18px;
       }
       @media (max-width: $breakpoint-lg) {
         font-size: 16px;
+        line-height: 26px;
       }
       @media (max-width: $breakpoint-md) {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 26px;
         margin: 16px 0 0 0;
         max-width: 80%;
         font-weight: 400;
       }
       & a {
         color: $whiteColor;
-        // font-family: 'HelveticaNowText-Bold', sans-serif;
+        font-weight: 700;
         border-color: $whiteColor;
       }
     }
@@ -203,18 +202,18 @@
     padding: 16px 0 16px 0;
   }
   &__title {
-    font-family: "HelveticaNowDisplay-XBd", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 36px;
-    line-height: 1.3;
-    letter-spacing: 0.225px;
+    line-height: 48px;
     color: #014f82;
     margin-bottom: 25px;
     @media (max-width: $breakpoint-xl) {
       font-size: 30px;
+      line-height: 40px;
     }
     @media (max-width: $breakpoint-lg) {
       font-size: 24px;
+      line-height: 32px;
     }
   }
   &__line {
@@ -245,9 +244,8 @@
     & p {
       margin-bottom: 15px;
     }
-    & strong {
-      font-family: 'HelveticaNowText-Bold', sans-serif;
-      font-weight: 600;
+    & strong {  
+      font-weight: 700;
       color: $darkBlue;
     }
   }
@@ -288,14 +286,26 @@
   }
   & h3 {
     margin-bottom: 8px;
-    font-family: "HelveticaNowDisplay-XBd", sans-serif;
-    font-size: 28px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
     color: #014f82;
-    line-height: 1.7;
     @media (max-width: $breakpoint-xl) {
       font-size: 24px;
+      line-height: 36px;
+    }
+    @media (max-width: $breakpoint-lg) {
+      line-height: 32px;
     }
   }
+  // & .btn-primary {
+  //   @media (max-width: $breakpoint-xl) {
+  //     padding: 10px 47px;
+  //   }
+  //   @media (max-width: $breakpoint-lg) {
+  //     padding: 6px 36px;
+  //   }
+  // }
   & p {
     margin-bottom: 10px;
   }
@@ -320,6 +330,10 @@
   position: relative;
   @media (max-width: $breakpoint-lg) {
     padding: 45px 0;
+    // margin-bottom: 100px;
+  }
+  @media (max-width: $breakpoint-md) {
+
   }
   &__inner {
     // display: flex;
@@ -345,7 +359,7 @@
   }
   &__title {
     margin-bottom: 6px;
-    font-family: "HelveticaNowDisplay-XBd", sans-serif;
+    font-weight: 900;
     font-size: 30px;
     line-height: 1.6;
     color: #014f82;
@@ -355,9 +369,11 @@
   }
   &__description {
     width: 85%;
+    @media (max-width: $breakpoint-xl) {
+      margin-right: 60px;
+    }
     & strong {
       font-weight: 700;
-      font-family: "HelveticaNowText-Bold";
       color: #014f82;
     }
   }
@@ -372,25 +388,32 @@
       display: flex;
       justify-content: center;
     }
-    & a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-width: 160px;
-      width: 160px;
-      padding: 12px 10px;
-      @media (max-width: $breakpoint-lg) {
-        width: 140px;
-        min-width: 140px;
-        padding: 9px 12px;
-      }
-    }
+    // & a {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   min-width: 160px;
+    //   width: 160px;
+    //   padding: 10px 10px;
+    //   @media (max-width: $breakpoint-xl) {
+    //     width: 178px;
+    //     min-width: 178px;
+    //   }
+    //   @media (max-width: $breakpoint-lg) {
+    //     width: unset;
+    //     min-width: unset;
+    //     padding: 6px 27px;
+    //   }
+    // }
   }
 }
 
 .faq {
   background: $lightGrey;
   padding: 100px 0;
+  @media (max-width: $breakpoint-xl) {
+    padding: 65px 0;
+  }
   @media (max-width: $breakpoint-md) {
     padding: 50px 0;
   }
@@ -400,17 +423,18 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.3;
-    letter-spacing: 0.225px;
     color: #014f82;
     display: flex;
     align-items: center;
     margin: 0 0 25px 0;
+    align-items: center;
     @media (max-width: $breakpoint-xl) {
       font-size: 30px; 
+      line-height: 35px;
     }
-    align-items: center;
     @media (max-width: $breakpoint-lg) {
       font-size: 24px;
+      line-height: 30px;
       flex-direction: column-reverse;
       align-items: flex-start;
       margin: 0 -15px 25px -15px;
@@ -432,8 +456,7 @@
     }
   }
   &__addition {
-    font-family: "HelveticaNowText-Bold", sans-serif;
-    padding: 14px 20px;
+    padding: 0 20px;
     font-size: 21px;
     margin: 30px -20px 0 -20px;
     font-weight: 700;
@@ -442,7 +465,7 @@
     }
     @media (max-width: $breakpoint-lg) {
       margin: 0 -15px;
-      padding: 14px 0;
+      padding: 10px 0;
       font-size: 18px;
       margin-top: 10px;
     }
@@ -450,35 +473,37 @@
 }
 
 .resources {
-  padding: 100px 0 85px 0;
+  padding: 100px 0 35px 0;
   @media (max-width: $breakpoint-xl) {
     padding: 70px 0;
   }
   @media (max-width: $breakpoint-lg) {
     padding-top: 60px;
   }
+  @media (max-width: $breakpoint-md) {
+    padding-bottom: 20px;
+  }
   &__item {
     margin-bottom: 40px;
     & .btn {
-      padding: 12px 20px;
-      @media (max-width: $breakpoint-md) {
-        padding: 9px 16px;
-      }
+      // padding: 10px 25px;
+      // @media (max-width: $breakpoint-lg) {
+
+      // }
+      // @media (max-width: $breakpoint-md) {
+      //   padding: 9px 16px;
+      // }
     }
   }
   &__heading {
-    // font-family: "Montserrat", sans-serif;
-    font-family: "HelveticaNowDisplay-XBd", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 21px;
-    line-height: 26px;
-    letter-spacing: 1.16667px;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
     color: $lightBlue;
   }
   &__title {
     margin-bottom: 20px;
-    font-family: "HelveticaNowDisplay-XBd", sans-serif;
+    font-weight: 900;
     font-size: 24px;
     color: $darkBlue;
     @media (max-width: $breakpoint-lg) {

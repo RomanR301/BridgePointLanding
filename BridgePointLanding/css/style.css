@@ -14,6 +14,38 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("../fonts/HelveticaNowDisplay-XBd.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("../fonts/HelveticaNowText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("../fonts/HelveticaNowText-It.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-display: swap;
+  src: url("../fonts/HelveticaNowText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .--relative {
   position: relative;
 }
@@ -117,7 +149,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: "HelveticaNowText-Regular", sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: #333333;
   font-weight: 400;
   vertical-align: baseline;
@@ -128,7 +160,7 @@ body {
   position: relative;
   background: #ffffff;
   color: #333333;
-  font-family: "HelveticaNowText-Regular", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -325,14 +357,13 @@ input[type=number] {
   text-decoration: none;
   color: #333333;
   font-size: 21px;
-  line-height: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 12px 20px 11px 20px;
+  padding: 11px 20px 12px 20px;
   font-size: 21px;
-  line-height: 1.5;
+  line-height: 32px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -369,16 +400,18 @@ input[type=number] {
 
 .btn {
   font-size: 18px;
-  line-height: 17px;
-  letter-spacing: 1px;
   line-height: 1;
-  padding: 13.5px 25px 12.5px 25px;
+  padding: 8px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   border: 2px solid transparent;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 46px;
   font-weight: 400;
   border-radius: 23px;
   cursor: pointer;
@@ -388,7 +421,6 @@ input[type=number] {
   background: #009ADE;
   border-color: #009ADE;
   color: #ffffff;
-  padding: 11px 36px 13px 36px;
 }
 
 .btn-primary:hover {
@@ -428,7 +460,6 @@ input[type=number] {
 }
 
 .contact-us-btn {
-  font-family: 'HelveticaNowText-Bold', sans-serif;
   font-weight: 700;
   display: inline-block;
   line-height: 1.1;
@@ -1298,11 +1329,10 @@ label[for="file-upload"] {
 
 .footer-title {
   font-size: 14px;
-  font-weight: 700;
   margin-bottom: 14px;
   line-height: 1.1;
   display: inline-block;
-  font-family: "HelveticaNowText-Bold", sans-serif;
+  font-weight: 700;
 }
 
 .footer-awards-row {
@@ -1324,7 +1354,7 @@ label[for="file-upload"] {
 }
 
 .footer-awards-row .awards__description {
-  font-family: "HelveticaNowDisplay-XBd", sans-serif;
+  font-weight: 900;
   margin-right: auto;
   color: #014F82;
   line-height: 24px;
@@ -1413,28 +1443,24 @@ label[for="file-upload"] {
 
 .main-screen__content h1 {
   color: #E8D766;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 1.8;
-  letter-spacing: 1.5px;
-  font-family: 'HelveticaNowDisplay-XBd', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 900;
   margin-bottom: 24px;
 }
 
 .main-screen__content p {
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 64px;
   color: #ffffff;
-  font-family: 'HelveticaNowDisplay-XBd', sans-serif;
 }
 
 .main-screen__content p span {
-  letter-spacing: 0.5px;
+  font-size: 48px;
+  line-height: 64px;
   color: #ffffff;
-  font-weight: bold;
-  font-family: 'HelveticaNowDisplay-XBd', sans-serif;
+  font-weight: 900;
   text-decoration: none;
   background-image: linear-gradient(#ffffff, #ffffff);
   background-position: 0% 92%;
@@ -1453,12 +1479,12 @@ label[for="file-upload"] {
   margin-left: 25px;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: unset;
   font-family: inherit;
 }
 
 .main-screen__button p a {
   color: #ffffff;
+  font-weight: 700;
   border-color: #ffffff;
 }
 
@@ -1519,11 +1545,9 @@ label[for="file-upload"] {
 }
 
 .info-block__title {
-  font-family: "HelveticaNowDisplay-XBd", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 36px;
-  line-height: 1.3;
-  letter-spacing: 0.225px;
+  line-height: 48px;
   color: #014f82;
   margin-bottom: 25px;
 }
@@ -1554,8 +1578,7 @@ label[for="file-upload"] {
 }
 
 .info-block__text strong {
-  font-family: 'HelveticaNowText-Bold', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #014F82;
 }
 
@@ -1586,10 +1609,10 @@ label[for="file-upload"] {
 
 .benefits h3 {
   margin-bottom: 8px;
-  font-family: "HelveticaNowDisplay-XBd", sans-serif;
-  font-size: 28px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
   color: #014f82;
-  line-height: 1.7;
 }
 
 .benefits p {
@@ -1635,7 +1658,7 @@ label[for="file-upload"] {
 
 .cta__title {
   margin-bottom: 6px;
-  font-family: "HelveticaNowDisplay-XBd", sans-serif;
+  font-weight: 900;
   font-size: 30px;
   line-height: 1.6;
   color: #014f82;
@@ -1647,21 +1670,11 @@ label[for="file-upload"] {
 
 .cta__description strong {
   font-weight: 700;
-  font-family: "HelveticaNowText-Bold";
   color: #014f82;
 }
 
 .cta__button {
   margin-top: 6px;
-}
-
-.cta__button a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 160px;
-  width: 160px;
-  padding: 12px 10px;
 }
 
 .faq {
@@ -1674,7 +1687,6 @@ label[for="file-upload"] {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.3;
-  letter-spacing: 0.225px;
   color: #014f82;
   display: flex;
   align-items: center;
@@ -1693,8 +1705,7 @@ label[for="file-upload"] {
 }
 
 .faq__addition {
-  font-family: "HelveticaNowText-Bold", sans-serif;
-  padding: 14px 20px;
+  padding: 0 20px;
   font-size: 21px;
   margin: 30px -20px 0 -20px;
   font-weight: 700;
@@ -1705,30 +1716,23 @@ label[for="file-upload"] {
 }
 
 .resources {
-  padding: 100px 0 85px 0;
+  padding: 100px 0 35px 0;
 }
 
 .resources__item {
   margin-bottom: 40px;
 }
 
-.resources__item .btn {
-  padding: 12px 20px;
-}
-
 .resources__heading {
-  font-family: "HelveticaNowDisplay-XBd", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 21px;
-  line-height: 26px;
-  letter-spacing: 1.16667px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   color: #009ADE;
 }
 
 .resources__title {
   margin-bottom: 20px;
-  font-family: "HelveticaNowDisplay-XBd", sans-serif;
+  font-weight: 900;
   font-size: 24px;
   color: #014F82;
 }
@@ -2254,19 +2258,19 @@ label[for="file-upload"] {
   }
 
   .main-screen__content h1 {
-    font-size: 32px;
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .main-screen__content p {
+    font-size: 40px;
+    line-height: 53px;
   }
 
   .main-screen__content p span {
     background-size: 100% 2px;
-  }
-
-  .main-screen__content p {
-    font-size: 36px;
-  }
-
-  .main-screen__content p span {
-    font-size: 36px;
+    font-size: 40px;
+    line-height: 53px;
   }
 
   .main-screen__button p {
@@ -2275,6 +2279,7 @@ label[for="file-upload"] {
 
   .info-block__title {
     font-size: 30px;
+    line-height: 40px;
   }
 
   .info-block__text {
@@ -2295,14 +2300,24 @@ label[for="file-upload"] {
 
   .benefits h3 {
     font-size: 24px;
+    line-height: 36px;
   }
 
   .cta__title {
     font-size: 24px;
   }
 
+  .cta__description {
+    margin-right: 60px;
+  }
+
+  .faq {
+    padding: 65px 0;
+  }
+
   .faq__heading {
     font-size: 30px;
+    line-height: 35px;
   }
 
   .faq__heading .icon-faq {
@@ -2326,16 +2341,18 @@ label[for="file-upload"] {
   }
 
   .accordion__content {
-    padding: 14px 0;
+    padding: 0 0 14px 0;
   }
 
   .accordion__button {
     padding: 16px 0 12px 0;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .btn {
-    padding: 9px 20px 9px 20px;
-    font-size: 16px;
+    min-width: 146px;
+    min-height: 40px;
   }
 
   .line {
@@ -2451,19 +2468,23 @@ label[for="file-upload"] {
   }
 
   .main-screen__content h1 {
-    font-size: 28px;
+    font-size: 30px;
+    line-height: 45px;
   }
 
   .main-screen__content p {
     font-size: 30px;
+    line-height: 42px;
   }
 
   .main-screen__content p span {
     font-size: 30px;
+    line-height: 42px;
   }
 
   .main-screen__button p {
     font-size: 16px;
+    line-height: 26px;
   }
 
   .info-block {
@@ -2472,6 +2493,7 @@ label[for="file-upload"] {
 
   .info-block__title {
     font-size: 24px;
+    line-height: 32px;
   }
 
   .info-block__text {
@@ -2484,6 +2506,10 @@ label[for="file-upload"] {
 
   .benefits .col-xs-12 {
     margin-bottom: 20px;
+  }
+
+  .benefits h3 {
+    line-height: 32px;
   }
 
   .cta {
@@ -2507,14 +2533,9 @@ label[for="file-upload"] {
     justify-content: center;
   }
 
-  .cta__button a {
-    width: 140px;
-    min-width: 140px;
-    padding: 9px 12px;
-  }
-
   .faq__heading {
     font-size: 24px;
+    line-height: 30px;
     flex-direction: column-reverse;
     align-items: flex-start;
     margin: 0 -15px 25px -15px;
@@ -2526,7 +2547,7 @@ label[for="file-upload"] {
 
   .faq__addition {
     margin: 0 -15px;
-    padding: 14px 0;
+    padding: 10px 0;
     font-size: 18px;
     margin-top: 10px;
   }
@@ -2543,7 +2564,6 @@ label[for="file-upload"] {
 @media (max-width: 767px) {
   .accordion__button {
     padding: 16px 40px 12px 0;
-    font-size: 18px;
   }
 
   .accordion__button i {
@@ -2664,20 +2684,22 @@ label[for="file-upload"] {
   }
 
   .main-screen {
-    padding: 60px 0 50px 0;
+    padding: 50px 0 30px 0;
   }
 
   .main-screen__content h1 {
     font-size: 21px;
-    margin-bottom: 12px;
+    line-height: 30px;
   }
 
   .main-screen__content p {
-    font-size: 26px;
+    font-size: 28px;
+    line-height: 38px;
   }
 
   .main-screen__content p span {
-    font-size: 26px;
+    font-size: 28px;
+    line-height: 38px;
   }
 
   .main-screen__button {
@@ -2686,7 +2708,8 @@ label[for="file-upload"] {
   }
 
   .main-screen__button p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 26px;
     margin: 16px 0 0 0;
     max-width: 80%;
     font-weight: 400;
@@ -2716,8 +2739,8 @@ label[for="file-upload"] {
     padding: 50px 0;
   }
 
-  .resources__item .btn {
-    padding: 9px 16px;
+  .resources {
+    padding-bottom: 20px;
   }
 }
 

@@ -33,7 +33,7 @@
     display:none;
     padding: 0 20px 25px 20px;
     @media (max-width: $breakpoint-lg) {
-      padding: 14px 0;
+      padding: 0 0 14px 0;
     }
     & p {
       margin: 0 0 15px 0;
@@ -56,21 +56,21 @@
     text-decoration: none;
     color: $defaultText;
     font-size: 21px;
-    line-height: 22px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 12px 20px 11px 20px;
+    padding: 11px 20px 12px 20px;
     font-size: 21px;
-    line-height: 1.5;
+    line-height: 32px;
     @include transition(.3);
     @media (max-width: $breakpoint-lg) {
       padding: 16px 0 12px 0;
+      font-size: 18px;
+      line-height: 26px;
     }
     @media (max-width: $breakpoint-md) {
       padding: 16px 40px 12px 0;
-      font-size: 18px;
     }
     & i {
       width: 20px;

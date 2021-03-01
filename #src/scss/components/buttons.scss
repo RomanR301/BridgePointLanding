@@ -3,27 +3,26 @@
 
 .btn {
   font-size: 18px;
-  line-height: 17px;
-  letter-spacing: 1px;
   line-height: 1;
-  padding: 13.5px 25px 12.5px 25px;
+  padding: 8px;
   @include transition(.3);
   border: 2px solid transparent;
-  display: inline-block;
-  // font-family: 'Montserrat', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 46px;
   font-weight: 400;
   border-radius: 23px;
   cursor: pointer;  
   @media (max-width: $breakpoint-lg) {
-    padding: 9px 20px 9px 20px;
-    font-size: 16px;
+    min-width: 146px;
+    min-height: 40px;
   }
   &-primary {
     background: $lightBlue;
     border-color: $lightBlue;
     color: $whiteColor;
-    padding: 11px 36px 13px 36px;
-    // padding: 12.5px 44px;
     &:hover {
       background: $whiteColor;
       color: $lightBlue;
@@ -56,7 +55,6 @@
 }
 
 .contact-us-btn {
-  font-family: 'HelveticaNowText-Bold', sans-serif;
   font-weight: 700;
   display: inline-block;
   line-height: 1.1;

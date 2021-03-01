@@ -34,11 +34,10 @@
   }
   &-title {
     font-size: 14px;
-    font-weight: 700;
     margin-bottom: 14px;
     line-height: 1.1;
     display: inline-block;
-    font-family: "HelveticaNowText-Bold", sans-serif;
+    font-weight: 700;
     
   } 
   &-awards-row {
@@ -71,7 +70,7 @@
         }
       }
       &__description {
-        font-family: "HelveticaNowDisplay-XBd", sans-serif;
+        font-weight: 900;
         margin-right: auto;
         color: $darkBlue;
         line-height: 24px;
