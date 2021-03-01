@@ -197,15 +197,9 @@
       margin: auto;
     }
     @media (max-width: $breakpoint-md) {
-      // margin: 40px -15px 0 -15px;
-      margin: 40px auto 0 auto;
-      width: 320px;
-      height: 320px;
-    }
-    @media (max-width: 360px) {
-      width: fit-content;
-      height: 320px;
       margin: 40px -15px 0 -15px;
+      width: calc(100% + 30px);
+      height: auto;
     }
     & img {
       @include defaultIcon(cover);
@@ -388,6 +382,10 @@
     width: 85%;
     @media (max-width: $breakpoint-xl) {
       margin-right: 60px;
+    }
+    @media (max-width: $breakpoint-lg) {
+      margin-right: 0;
+      width: 100%;
     }
     & strong {
       font-weight: 700;

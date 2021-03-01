@@ -2537,6 +2537,11 @@ label[for="file-upload"] {
     width: 44px;
   }
 
+  .cta__description {
+    margin-right: 0;
+    width: 100%;
+  }
+
   .cta__button {
     position: absolute;
     left: 0;
@@ -2745,9 +2750,9 @@ label[for="file-upload"] {
   }
 
   .info-block__image {
-    margin: 40px auto 0 auto;
-    width: 320px;
-    height: 320px;
+    margin: 40px -15px 0 -15px;
+    width: calc(100% + 30px);
+    height: auto;
   }
 
   .faq {
@@ -2872,11 +2877,5 @@ label[for="file-upload"] {
 @media (max-width: 360px) {
   .footer-awards-row .awards__image {
     width: 100%;
-  }
-
-  .info-block__image {
-    width: fit-content;
-    height: 320px;
-    margin: 40px -15px 0 -15px;
   }
 }
