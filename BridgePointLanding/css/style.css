@@ -1104,6 +1104,7 @@ label[for="file-upload"] {
 .sub-menu-container a {
   font-family: 'Helvetica', sans-serif;
   font-weight: 400;
+  letter-spacing: 0;
 }
 
 .sub-menu-container .sub-menu-inner {
