@@ -1102,7 +1102,7 @@ label[for="file-upload"] {
 }
 
 .sub-menu-container a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-weight: 400;
 }
 
@@ -1147,7 +1147,7 @@ label[for="file-upload"] {
 }
 
 .sub-menu a {
-  font-family: 'Roboto';
+  font-family: 'Helvetica', sans-serif;
   line-height: 30px;
   font-size: 16px;
   display: inline-block;
@@ -2335,6 +2335,13 @@ label[for="file-upload"] {
   }
 }
 
+@media (max-width: 1024px) {
+  .benefits__icon {
+    height: 44px;
+    margin-bottom: 18px;
+  }
+}
+
 @media (max-width: 991px) {
   .accordion-container {
     margin: 0 -15px;
@@ -2489,6 +2496,12 @@ label[for="file-upload"] {
 
   .info-block {
     padding: 60px 0;
+  }
+
+  .info-block__image {
+    width: 345px;
+    height: 345px;
+    margin: auto;
   }
 
   .info-block__title {
@@ -2732,7 +2745,9 @@ label[for="file-upload"] {
   }
 
   .info-block__image {
-    margin: 40px -15px 0 -15px;
+    margin: 40px auto 0 auto;
+    width: 320px;
+    height: 320px;
   }
 
   .faq {
@@ -2857,5 +2872,11 @@ label[for="file-upload"] {
 @media (max-width: 360px) {
   .footer-awards-row .awards__image {
     width: 100%;
+  }
+
+  .info-block__image {
+    width: fit-content;
+    height: 320px;
+    margin: 40px -15px 0 -15px;
   }
 }
